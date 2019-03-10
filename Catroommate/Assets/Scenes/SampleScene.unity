@@ -142,20 +142,57 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cat: {fileID: 701899496}
+  emoji_cat_0: {fileID: 21300000, guid: 9e579258cd5f03c458e8f59d261f7a23, type: 3}
   emoji_cat_1: {fileID: 21300002, guid: 9e579258cd5f03c458e8f59d261f7a23, type: 3}
   emoji_cat_2: {fileID: 21300004, guid: 9e579258cd5f03c458e8f59d261f7a23, type: 3}
+  emoji_cat_3: {fileID: 21300006, guid: 9e579258cd5f03c458e8f59d261f7a23, type: 3}
+  emoji_cat_4: {fileID: 21300008, guid: 9e579258cd5f03c458e8f59d261f7a23, type: 3}
+  emoji_cat_5: {fileID: 21300010, guid: 9e579258cd5f03c458e8f59d261f7a23, type: 3}
+  emoji_cat_6: {fileID: 21300012, guid: 9e579258cd5f03c458e8f59d261f7a23, type: 3}
+  emoji_cat_7: {fileID: 21300014, guid: 9e579258cd5f03c458e8f59d261f7a23, type: 3}
+  emoji_cat_8: {fileID: 21300016, guid: 9e579258cd5f03c458e8f59d261f7a23, type: 3}
+  emoji_cat_9: {fileID: 21300018, guid: 9e579258cd5f03c458e8f59d261f7a23, type: 3}
+  emoji_cat_10: {fileID: 21300020, guid: 9e579258cd5f03c458e8f59d261f7a23, type: 3}
+  emoji_cat_11: {fileID: 21300022, guid: 9e579258cd5f03c458e8f59d261f7a23, type: 3}
   ques: {fileID: 2001363061}
   questions:
   - '"I have a fully furnished 2 bedroom & I need a roommate! Just a few questions
     tho..."'
   - ' "Are you a night owl or an early riser?"'
-  - ' "What do you like on yr pizza?"'
+  - '"What do you like on yr pizza?"'
   - ' "How do you feel about naps?"'
   - '"Don''t you hate birds?"'
-  - ' "Are you allergic to cats?"'
+  - ' "Are you allergic to cats?" '
   - '"Can I have some belly rubs?"'
+  - 
   index: 0
-  typingSpeed: 0.05
+  LeftButton: {fileID: 1513952732}
+  LAnswers:
+  - Great!
+  - Night Owl
+  - Veggies
+  - Love 'em
+  - The most
+  - A little
+  - Yep
+  - 
+  RightButton: {fileID: 614112357}
+  RAnswers:
+  - Okay...
+  - Early Riser
+  - Anchovies
+  - Hate 'em
+  - Not rly
+  - Nope
+  - IDK
+  - 
+  count1: 0
+  count2: 0
+  buttonLeft: {fileID: 399340716}
+  buttonRight: {fileID: 1741605193}
+  typingSpeed: 0.04
+  GoodAnswers: 0
+  BadAnswers: 0
 --- !u!4 &11930927
 Transform:
   m_ObjectHideFlags: 0
@@ -182,7 +219,7 @@ GameObject:
   - component: {fileID: 399340717}
   - component: {fileID: 399340716}
   m_Layer: 5
-  m_Name: Text
+  m_Name: ButtonLeft
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -240,7 +277,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Okay...
+  m_Text: 
 --- !u!222 &399340717
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -344,7 +381,7 @@ GameObject:
   - component: {fileID: 614112358}
   - component: {fileID: 614112357}
   m_Layer: 5
-  m_Name: UpperAnswer
+  m_Name: RightAnswer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -367,7 +404,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -94, y: -81}
+  m_AnchoredPosition: {x: 4.4, y: -145.6}
   m_SizeDelta: {x: 188, y: 51.9}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &614112357
@@ -411,7 +448,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 11930926}
-        m_MethodName: ClickUP
+        m_MethodName: ClickRight
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -514,7 +551,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 9e579258cd5f03c458e8f59d261f7a23, type: 3}
+  m_Sprite: {fileID: 21300022, guid: 9e579258cd5f03c458e8f59d261f7a23, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -533,7 +570,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 701899496}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.549, y: -2.189, z: 0}
+  m_LocalPosition: {x: 4.08, y: -1.78, z: 0}
   m_LocalScale: {x: 1.357, y: 1.321, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -653,7 +690,7 @@ GameObject:
   - component: {fileID: 1513952733}
   - component: {fileID: 1513952732}
   m_Layer: 5
-  m_Name: BelowAnswer
+  m_Name: LeftAnswer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -676,7 +713,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -94, y: -180}
+  m_AnchoredPosition: {x: -206.2, y: -145.6}
   m_SizeDelta: {x: 184, y: 51.9}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1513952732
@@ -701,7 +738,7 @@ MonoBehaviour:
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_PressedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -720,7 +757,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 11930926}
-        m_MethodName: ClickDOWN
+        m_MethodName: ClickLeft
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -781,7 +818,7 @@ GameObject:
   - component: {fileID: 1741605194}
   - component: {fileID: 1741605193}
   m_Layer: 5
-  m_Name: Text
+  m_Name: ButtonRight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -839,7 +876,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Great!
+  m_Text: 
 --- !u!222 &1741605194
 CanvasRenderer:
   m_ObjectHideFlags: 0

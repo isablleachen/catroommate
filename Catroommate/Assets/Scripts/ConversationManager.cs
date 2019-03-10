@@ -134,7 +134,7 @@ public class ConversationManager : MonoBehaviour
         }
         if (index == 6)
         {
-            cat.gameObject.GetComponent<SpriteRenderer>().sprite = emoji_cat_4;
+            cat.gameObject.GetComponent<SpriteRenderer>().sprite = emoji_cat_10;
             BadAnswers++;
         }
         if (index == 7)
@@ -176,7 +176,7 @@ public class ConversationManager : MonoBehaviour
         }
         if (index == 6)
         {
-            cat.gameObject.GetComponent<SpriteRenderer>().sprite = emoji_cat_10;
+            cat.gameObject.GetComponent<SpriteRenderer>().sprite = emoji_cat_4;
             GoodAnswers++;
         }
         if (index == 7)

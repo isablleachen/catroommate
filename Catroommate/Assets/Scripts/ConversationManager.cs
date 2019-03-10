@@ -1,31 +1,56 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.UI;
 using UnityEngine;
-using TMPro;
+
 
 public class ConversationManager : MonoBehaviour
 {
-    public TextMeshProUGUI question;
+    public GameObject cat;
+    public Sprite emoji_cat_1;
+    public Sprite emoji_cat_2;
+
+    public Text ques;
     public string[] questions;
+    public int index;
 
-    private void Start()
+    public float typingSpeed;
+    // Start is called before the first frame update
+    void Start()
     {
-        
+        StartCoroutine(Type());
     }
 
-    public void ShowNextQuestion()
+    IEnumerator Type()
     {
-        question.text = "";
+        foreach(char letter in questions[index].ToCharArray())
+        {
+            ques.text += letter;
+            yield return new WaitForSeconds(typingSpeed);
+        }
     }
 
-    public void ClickOnRight()
+    // Update is called once per frame
+
+    public void GetQuestion()
     {
-        ShowNextQuestion();
+        if(index < questions.Length - 1)
+        {
+            index++;
+            ques.text = "";
+            StartCoroutine(Type());
+        }
     }
 
-    public void ClickOnLeft()
+    public void ClickUP()
     {
-        ShowNextQuestion();
+        cat.gameObject.GetComponent<SpriteRenderer>().sprite = emoji_cat_1;
+        GetQuestion();
+    }
+
+    public void ClickDOWN()
+    {
+        cat.gameObject.GetComponent<SpriteRenderer>().sprite = emoji_cat_2;
+        GetQuestion();
     }
 }
-
